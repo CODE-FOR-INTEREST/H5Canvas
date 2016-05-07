@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>Examples</title>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="canvas.css">
+</head>
+<body>
+    <canvas id="my-canvas">your browser does not support the canvas tag</canvas>
+    <div id="my-canvas-footer">
+      <div id="color-sets">
+        <div class="palette-box">
+          <div class="palette white"></div>
+        </div>  
+        <div class="palette-box">
+          <div class="palette green"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette red"></div>
+        </div> 
+        <div class="palette-box">
+          <div class="palette blue"></div>
+        </div>
+        <div class="palette-box">
+          <div id="default-color" class="palette black"></div>
+        </div>    
+      </div>
+      <div id="my-canvas-ctrl">
+        <div class="item">
+          <div id="pen-preview"></div>
+        </div>
+        <div class="item" data-id="enlarge">放大</div>
+        <div class="item" data-id="narrow">缩小</div>
+        <div class="item" data-id="changeColor">颜色</div>
+        <div class="item" data-id="cancel">清空</div>
+        <!-- <div class="item" data-id="save">保存</div> -->
+        <div style="clear:both"></div>
+      </div>
+    </div>
+    <script src="canvas.js"></script>
+</body>
+</html>
