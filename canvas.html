@@ -9,36 +9,90 @@
 <link rel="stylesheet" type="text/css" href="canvas.css">
 </head>
 <body>
+    <div id="reference-img">
+      <div id="model-container">
+        <div id="model-title">图片参考</div>
+        <!-- 应该换成你的路径 -->
+        <img src="/Users/zhenzong/Downloads/简笔画图集/20150826092755539.jpg">
+      </div>
+    </div>
+    <!-- 应该换成你的路径 -->
+    <img id="canvas-share" src="/Users/zhenzong/Downloads/简笔画图集/share.png">
     <canvas id="my-canvas">your browser does not support the canvas tag</canvas>
     <div id="my-canvas-footer">
+      <div id="pen-sets">
+        <div class="pen-sets-item">
+          <div id="current-pen" class="pen-small" data-size="5"></div>
+        </div>
+        <div class="pen-sets-item">
+          <div class="pen-middle" data-size="10"></div>
+        </div>
+        <div class="pen-sets-item">
+          <div class="pen-large" data-size="15"></div>
+        </div>
+      </div>
       <div id="color-sets">
         <div class="palette-box">
-          <div class="palette white"></div>
+          <div class="palette" style="background: #FCC6D5"></div>
         </div>  
         <div class="palette-box">
-          <div class="palette green"></div>
+          <div class="palette" style="background: #F85066"></div>
         </div>
         <div class="palette-box">
-          <div class="palette red"></div>
+          <div class="palette" style="background: #FA2BB0"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #43CFF2"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #5476F5"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #9D85F8"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #FEF54C"></div>
         </div> 
         <div class="palette-box">
-          <div class="palette blue"></div>
+          <div class="palette" style="background: #FCC243"></div>
         </div>
         <div class="palette-box">
-          <div id="default-color" class="palette black"></div>
-        </div>    
+          <div class="palette" style="background: #F0D68A"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #CAA875"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #94C335"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: #24A452"></div>
+        </div>
+        <div class="palette-box">
+          <div class="palette" style="background: white"></div>
+        </div> 
+        <div class="palette-box">
+          <div class="palette" style="background: gray"></div>
+        </div>
+        <div class="palette-box">
+          <div id="current-color" class="palette" style="background: black"></div>
+        </div>   
       </div>
       <div id="my-canvas-ctrl">
         <div class="item">
           <div id="pen-preview"></div>
         </div>
-        <div class="item" data-id="enlarge">放大</div>
-        <div class="item" data-id="narrow">缩小</div>
+        <div class="item" data-id="changeSize">画笔</div>
         <div class="item" data-id="changeColor">颜色</div>
-        <div class="item" data-id="cancel">清空</div>
+        <div class="item" data-id="back">后退</div>
+        <div class="item" data-id="clear">清空</div>
         <!-- <div class="item" data-id="save">保存</div> -->
         <div style="clear:both"></div>
       </div>
+    </div>
+    <div id="share-model">
+      <div class="result">你的画表现了你灵魂画师的潜力，以后你就是画坛半壁江山了！</div>
+      <div id="share-btn" class="btn">分享到盆友圈</div>
     </div>
     <script src="canvas.js"></script>
 </body>
